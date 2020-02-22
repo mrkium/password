@@ -1,4 +1,5 @@
 <?php
+error_reporting(0); // Disable all errors.
 session_start();
 ?>
 <!DOCTYPE html>
