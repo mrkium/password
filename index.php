@@ -1,6 +1,5 @@
 <?php
-error_reporting( E_ALL ); 
-//session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -13,14 +12,10 @@ error_reporting( E_ALL );
 <link href="css/bootstrap-switch.css" rel="stylesheet">
 </head>
 <body>
-
 <div class="container">
-
 <div class="row">
-<h2 class="text-center">Generador de contraseñas</h2>
+  <h2 class="text-center">Generador de contraseñas</h2>
 </div>
-
-
 <div class="row">
 <div class="span12">
   <form action="" method="post" class="form-horizontal">
@@ -69,7 +64,7 @@ error_reporting( E_ALL );
                   <select class="input-mini" name="num">
                     <?php $j=1; while($j<=10){?>
                     <option <?php if(isset($_POST['lenght']) && $j==$_POST['num']){echo "selected";}elseif($j==1 && !isset($_POST['num'])) {echo "selected";}?>><?php echo $j++?></option>
-                    <?php }?>
+                    <?php } ?>
                   </select>
                 </div>
               </div>
@@ -167,7 +162,7 @@ error_reporting( E_ALL );
   <div class="row-fluid">
     <div class="well">
       <textarea class="span12" rows="10"><?php echo $str;?></textarea>
-      <?	
+      <?php	
 	}
 ?>
     </div>
@@ -177,7 +172,7 @@ error_reporting( E_ALL );
   <div class="container">
     <div class="row">
       <div class="span12">
-        <div class="text-center">Cloud Computing Apps</div>
+        <div class="text-center">Guillermo Santillan 2020</div>
       </div>
     </div>
   </div>
