@@ -1,6 +1,6 @@
 <?php
 error_reporting( E_ALL ); 
-session_start();
+//session_start();
 ?>
 <!DOCTYPE html>
 <html lang="es">
